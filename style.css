@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.mobile__navbar {
+  display: none;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.navbar {
+  background: rgb(255, 255, 255);
+  width: fit-content;
+  height: 100vh;
+}
+
+aside {
+  padding: 10px;
+  height: 100vh;
+}
+
+.home {
+  background: rgb(68, 68, 234);
+  border-radius: 3px;
+  color: white;
+}
+
+i {
+  color: rgb(163, 163, 163);
+  padding: 3px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-flex div {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  display: flex;
+}
+
+/* ------------- */
+.section__account {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ----section-1------ */
+.section-1 {
+  background: rgb(241 241 241 / 84%);
+}
+
+.section-1,
+.section-2 {
+  height: 100vh;
+  padding: 1rem 2.5rem;
+}
+.section-3 { 
+  padding: 1rem 1.5rem;
+}
+.section-1__profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.profile__picture img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.small-color-gray {
+  color: rgb(158, 158, 158);
+  padding: 5px 0;
+}
+
+.small-text-size {
+  font-size: 7px;
+}
+
+.welcome-size {
+  font-size: 8px;
+}
+
+.section-1__account-details,
+.section-1__transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  background: rgb(68, 68, 234);
+  padding: 5px;
+  width: 4.5rem;
+  font-size: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-down {
+  color: white;
+  background-color: none;
+  padding-left: 5px;
+  font-size: 5px;
+}
+
+/* ---section-2------ */
+.section-2 {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.section-2__top {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.section-2__top-details {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.border-bottom {
+  width: 90%;
+  height: 1px;
+  background: rgb(220, 220, 220);
+  border: none;
+}
+
+.section-2__middle {
+  height: 40%;
+}
+
+.chart {
+  height: 90% !important;
+}
+
+.text-color-blue {
+  font-weight: bold;
+  color: rgb(68, 68, 234);
+}
+
+.section-2__bottom-details {
+  grid-template-columns: 1fr 2fr;
+  padding: 10px 0;
+}
+.section-2-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-2-details div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 90%;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.section-2__percentage-bar {
+  display: flex;
+  gap: 10px;
+}
+.progress-bar-1,
+.progress-bar-2,
+.progress-bar-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.progress-bar-1 {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(161, 240, 169) 64%, rgb(254, 254, 254) 0);
+}
+.progress-bar-2 {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(161, 240, 169) 95%, rgb(254, 254, 254) 0);
+}
+.progress-bar-3 {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(161, 240, 169) 87%, rgb(254, 254, 254) 0);
+}
+
+.progress-bar-1::before {
+  content: "64%";
+}
+
+.progress-bar-2::before {
+  content: "95%";
+}
+
+.progress-bar-3::before {
+  content: "87%";
+}
+/* ---section-3------ */
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 9px;
+}
+.input_contribution,
+.input_age {
+  width: 80%;
+  height: 5px;
+  background: rgb(68, 68, 234);
+}
+.section-3__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(241 241 241 / 84%);
+  padding: 10px;
+  border-radius: 5px;
+}
+.section-3__middle div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.update {
+  width: 80%;
+  margin: 0 10%;
+}
+.blue-text {
+  color: rgb(68, 68, 234);
+  cursor: pointer;
+}
+.align-center {
+  text-align: center;
+}
+.text-gray {
+  color: gray;
+}
+.section-3__bottom {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid rgb(220, 220, 220);
+  margin-top: 1rem;
+  padding: 5px 10px;
+}
+

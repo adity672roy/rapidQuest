@@ -1,0 +1,106 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .mobile__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(233, 233, 233);
+  }
+
+  i {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color: black;
+  }
+
+  .section__account {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .section-1,
+  .section-2,
+  .section-3 {
+    padding: 4rem;
+  }
+
+  .profile__picture img {
+    width: 90px;
+    height: 90px;
+  }
+  .name {
+    font-size: 38px;
+  }
+
+  .welcome-size {
+    font-size: 17px;
+  }
+  .headings {
+    font-size: 26px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .section-1__profile,
+  .section-1__account-details,
+  .section-1__transactions {
+    gap: 30px;
+  }
+  .small-text-size,
+  .drop-down {
+    font-size: 15px;
+  }
+  .btn {
+    width: 100%;
+    padding: 0;
+    font-size: larger;
+  }
+  .drop-down {
+    padding-top: 21px;
+  }
+  .section-2__top-details,
+  .section-2__bottom-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chart {
+    height: 100% !important;
+  }
+  .section-2__percentage-bar {
+    justify-content: space-between;
+  }
+  .progress-bar-1,
+  .progress-bar-2,
+  .progress-bar-3 {
+    height: 80px;
+    width: 80px;
+  }
+  .section-2__bottom {
+    padding-top: 1rem;
+  }
+  .update {
+    padding: 15px;
+    width: 80%;
+  }
+  .section-3__bottom {
+    display: none;
+  }
+  .section-3 {
+    
+    margin-bottom: 5rem;
+  }
+
+  .section-3__details {
+    gap: 15px;
+    margin-top: 2rem;
+  }
+}

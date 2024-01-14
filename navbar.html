@@ -1,0 +1,195 @@
+<section class="section__account">
+    <div class="section-1">
+      <div class="section-1__profile">
+        <div class="profile__picture">
+          <img src="profile.jpeg" alt="" />
+        </div>
+        <div>
+          <h4>Hi Mike,</h4>
+          <p class="small-color-gray welcome-size">welcome back.</p>
+        </div>
+      </div>
+      <div class="section-1__account-details">
+        <h6>Today</h6>
+        <div>
+          <h4>$19,892</h4>
+          <p class="small-color-gray small-text-size">Account Balance</p>
+        </div>
+        <div>
+          <h6>$4000</h6>
+          <p class="small-color-gray small-text-size">
+            Year-to-Date Contributions
+          </p>
+        </div>
+        <div>
+          <h6>$1,892</h6>
+          <p class="small-color-gray small-text-size">Total Interest</p>
+        </div>
+        <button class="btn">
+          <p>I want to</p>
+          <i class="bi bi-caret-down-fill drop-down"></i>
+        </button>
+      </div>
+      <div class="section-1__transactions">
+        <h6>Recent Transactions</h6>
+        <div>
+          <p class="small-color-gray small-text-size">2020-08-07</p>
+          <p class="small-text-size">Withdrawal Transfer to Bank-XXX11</p>
+        </div>
+        <div>
+          <p class="small-color-gray small-text-size">2020-07-17</p>
+          <p class="small-text-size">Withdrawal Transfer to Bank-XXX11</p>
+        </div>
+        <div>
+          <p class="small-color-gray small-text-size">2020-07-06</p>
+          <p class="small-text-size">Withdrawal Transfer to Bank-XXX11</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of section-1 -->
+
+    <div class="section-2">
+      <div class="section-2__top">
+        <div>
+          <p class="welcome-size text-color-blue">Retirement Income</p>
+          <h6>Starting Year 2056</h6>
+        </div>
+        <div class="d-grid section-2__top-details">
+          <div>
+            <h5>$300,000</h5>
+            <p class="small-color-gray small-text-size">My Goal</p>
+            <hr class="border-bottom" />
+          </div>
+          <div>
+            <h5>59%</h5>
+            <p class="small-color-gray small-text-size">Goal Achieved</p>
+            <hr class="border-bottom" />
+          </div>
+          <div>
+            <h5>$300</h5>
+            <p class="small-color-gray small-text-size">
+              Est. Monthly income
+            </p>
+            <hr class="border-bottom" />
+          </div>
+        </div>
+      </div>
+      <!-- -------- -->
+      <div class="section-2__middle">
+        <h6>Contributions Overtime</h6>
+        <canvas id="myChart" class="chart"></canvas>
+      </div>
+      <!-- -------- -->
+      <div class="section-2__bottom">
+        <h6>How do I compare to my peers?</h6>
+        <p class="small-color-gray small-text-size">
+          These number represent current goal achievements
+        </p>
+
+        <div class="d-grid section-2__bottom-details">
+          <div class="section-2-details">
+            <div>
+              <p class="small-text-size">Age : under 30</p>
+              <i class="bi bi-caret-down-fill small-text-size"></i>
+            </div>
+            <div>
+              <p class="small-text-size">Salary : k 20 - k 30</p>
+              <i class="bi bi-caret-down-fill small-text-size"></i>
+            </div>
+            <div>
+              <p class="small-text-size">Gender : Male</p>
+              <i class="bi bi-caret-down-fill small-text-size"></i>
+            </div>
+          </div>
+          <div class="section-2__percentage-bar">
+            <div class="progress-bar-1">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+            <div class="progress-bar-2">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+            <div class="progress-bar-3">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of section-2 -->
+
+    <div class="section-3">
+      <div class="section-3__details">
+        <h6>Retirement Strategy</h6>
+        
+        <b class="small-text-size">Employee Contribution</b>
+        <div class="slider">
+          <input
+            type="range"
+            class="input_contribution"
+            min="0"
+            max="100"
+            value="12"
+            oninput="rangeValue.innerText = this.value"
+          />
+          <b id="rangeValue" class="small-text-size">12%</b>
+        </div>
+        <b class="small-text-size">Retirement Age</b>
+        <div class="slider">
+          <input
+            class="input_age"
+            type="range"
+            min="0"
+            max="100"
+            value="65"
+            oninput="value2.innerText = this.value"
+          />
+          <b id="value2" class="welcome-size">65</b>
+        </div>
+        <hr />
+        <div class="section-3__middle">
+          <div>
+            <b class="small-text-size">Employee Contribution</b>
+            <b class="small-text-size">8.4%</b>
+          </div>
+          <div>
+            <b class="small-text-size">Interest Rate</b>
+            <b class="small-text-size">5%</b>
+          </div>
+        </div>
+        <button class="btn update">Update</button>
+        <p class="small-text-size blue-text align-center">View Help Docs ></p>
+      </div>
+
+      <div class="section-3__bottom">
+        <h6 class="text-gray">Are you considering a</h6>
+        <h6>Housing Advance ?</h6>
+        <p class="small-text-size small-color-gray">Limited time reduced interest</p>
+        <p class="small-text-size blue-text">Learn More ></p>
+      </div>
+    </div>
+
+    <!-- end of section-3 -->
+  </section>
